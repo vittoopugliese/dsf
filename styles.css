@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:ital,wght@1,300&display=swap');
+*{padding: 0;margin: 0;box-sizing: border-box;outline:none;font-family: 'Fredoka', sans-serif;font-weight: 500;} 
+*::selection{background-color: var(--secondary);color: var(--main);font-weight: 900 !important;}
+a{text-decoration: none !important;}
+*, *:before, *:after {box-sizing: inherit;}
+:root{
+    --main:rgb(32, 32, 39);
+    --secondary:rgb(250, 209, 121);
+    --grey:rgb(51, 50, 47);
+    --light:rgb(221, 221, 221);
+}
