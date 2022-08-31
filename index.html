@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/diegote.jpg" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DSF Representaciones</title>
 </head>
 
@@ -16,27 +18,27 @@
     <div id="wrapper">
 
         <section class="pic">
-            <img src="assets/diegote.jpg" alt="profile picture">
+            <img src="assets/diegote.jpg" alt="profile picture" draggable="false">
         </section>
 
         <section class="text">
             <h1 class="textName">Diego Sebastián Fernández</h1>
-            <h1 class="subText">Ejecutivo de ventas. </h1>
+            <h1 class="subText">Ejecutivo de ventas</h1>
             <h2 class="textDesc">Representante de distintas empresas nacionales e importadoras del rubro bazar, limpieza y ferretería.</h2>
         </section>
 
         <section class="links">
             <div class="linksWrapper">
                 <a class="linkContainer" href="https://vittoriopugliese.com" target="_blank">
-                    <img class="linkLogo" src="assets/wsp.svg" alt="whatsapp link" width="40px">
+                    <img class="linkLogo" src="assets/wsp.svg" alt="whatsapp link" width="40px" draggable="false">
                     <h2 class="linkText">Whatsapp</h2>
                 </a>
                 <a class="linkContainer" href="https://vittoriopugliese.com">
-                    <img class="linkLogo" src="assets/phone.svg" alt="mobile link" width="36px">
+                    <img class="linkLogo" src="assets/phone.svg" alt="mobile link" width="36px" draggable="false">
                     <h2 class="linkText">Telefono Movil</h2>
                 </a>
                 <a class="linkContainer" href="https://vittoriopugliese.com" s>
-                    <img class="linkLogo" src="assets/email.svg" alt="email link" width="36px">
+                    <img class="linkLogo" src="assets/email.svg" alt="email link" width="36px" draggable="false">
                     <h2 class="linkText">Enviame un Email</h2>
                 </a>
             </div>
@@ -44,22 +46,73 @@
 
         <section class="logos">
             <div class="logosWrapper">
-                <div class="logoContainer">
+                <div class="logoContainer" data-aos-anchor-placement="bottom-bottom" data-aos="fade-up" data-aos-duration="500">
                     <a href="#" class="logoLink">
-                        <img src="assets/li.svg" alt="linkedin icon" width="40px">
+                        <img src="assets/li.svg" alt="linkedin icon" width="40px" draggable="false">
                     </a>
                 </div>
-                <div class="logoContainer">
+                <div class="logoContainer" data-aos-anchor-placement="bottom-bottom" data-aos="fade-up" data-aos-duration="1000">
                     <a href="#" class="logoLink">
-                        <img src="assets/ig.svg" alt="linkedin icon" width="40px">
+                        <img src="assets/ig.svg" alt="linkedin icon" width="40px" draggable="false">
                     </a>
                 </div>
-                <div class="logoContainer">
+                <div class="logoContainer" data-aos-anchor-placement="bottom-bottom" data-aos="fade-up" data-aos-duration="1500">
                     <a href="#" class="logoLink">
-                        <img src="assets/fb.svg" alt="linkedin icon" width="40px">
+                        <img src="assets/fb.svg" alt="linkedin icon" width="40px" draggable="false">
                     </a>
                 </div>
             </div>
+        </section>
+
+        <section class="carousel">
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
 
