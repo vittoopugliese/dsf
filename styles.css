@@ -8,9 +8,13 @@
   font-weight: 500;
 }
 *::selection {
-  background-color: var(--secondary);
-  color: var(--main);
+  background-color: grey;
+  color: white;
   font-weight: 900 !important;
+}
+html {
+  overflow-x: hidden !important;
+  background: linear-gradient(0deg, rgb(154, 154, 154) 0%, white 100%);
 }
 a {
   text-decoration: none !important;
@@ -21,12 +25,6 @@ a {
 *:after {
   box-sizing: inherit;
 }
-:root {
-  --main: rgb(32, 32, 39);
-  --secondary: rgb(250, 209, 121);
-  --grey: rgb(51, 50, 47);
-  --light: rgb(221, 221, 221);
-}
 #wrapper {
   display: flex;
   justify-content: center;
@@ -36,19 +34,92 @@ a {
   width: 94%;
   margin: 0px auto;
 }
-.bg {
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  gap: 50px;
+  width: 100vw;
+  height: 20px;
+}
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 0px;
   height: 100vh;
+  gap: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  z-index: 1000;
+  transition: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.navContainer a {
+  display: none;
+}
+.navContainerShown {
+  display: flex;
+  width: 200px;
+}
+.navContainerShown a {
+  display: flex;
+  font-size: 20px;
+}
+.navContainerBg {
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  opacity: 0.54;
+  z-index: 1000;
+}
+.navContainerBgShown {
+  width: 100vw;
+  height: 100vh;
+}
+.navToggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2000;
+  right: 25px;
+  margin-top: 54px;
+}
+.navToggler span {
+  width: 25px;
+  height: 2px;
+  margin: 3px 0px;
+  background-color: black;
+  transition: 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.navToggler:hover span {
+  margin: 2px 0px;
+}
+
+/* pics */
+.bg {
+  height: 150vh;
   width: 100vw;
   z-index: -1000;
-  /* filter: brightness(0.4); */
   position: absolute;
   left: 0px;
   top: 0px;
-  /* display: none; */
-  background: linear-gradient(360deg, #00081f 0%, #4a77ff 100%);
+  /* background: linear-gradient(0deg, #000617 0%, #2873ff 100%); */
+  background: linear-gradient(0deg, rgb(154, 154, 154) 0%, white 100%);
 }
 .pic {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .pic img {
   width: 154px;
@@ -76,7 +147,8 @@ a {
 }
 .textDesc {
   font-size: 20px;
-  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
   text-align: center;
   color: black;
 }
@@ -136,35 +208,27 @@ a {
 }
 .logoLink img {
   width: 48px;
-  filter: invert(1);
 }
 
 /* carousel */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
 .slider {
   background: transparent;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
   margin: auto;
-  overflow: hidden;
-  position: relative;
   width: 100vw;
   margin-top: 40px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
 }
 .slider::before,
 .slider::after {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(205, 205, 205, 0.545) 0%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ); */
   content: "";
   height: 100px;
   position: absolute;
@@ -180,12 +244,39 @@ a {
   left: 0;
   top: 0;
 }
-.slider .slide-track {
-  animation: scroll 36s linear infinite;
+.slide-track {
+  animation: scroll 18s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
-.slider .slide {
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 25px;
   height: 100px;
   width: 250px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #d7d7d7;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #686868;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d7d7d7;
 }
