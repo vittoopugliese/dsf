@@ -142,7 +142,7 @@ nav {
   text-align: center;
 }
 .subText {
-  font-size: 24px;
+  font-size: 26px;
   color: black;
 }
 .textDesc {
@@ -266,6 +266,7 @@ nav {
     transform: translateX(calc(-250px * 7));
   }
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
