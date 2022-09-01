@@ -385,6 +385,17 @@ nav {
   .logoLink img {
     width: 44px;
   }
+  /* carousel */
+  .carousel {
+    margin-top: 4px;
+  }
+  .slider {
+    height: 124px;
+  }
+  .slider::before,
+  .slider::after {
+    height: 124px;
+  }
 }
 
 @media (max-width: 624px) {
@@ -488,17 +499,5 @@ nav {
   }
   .logoLink img {
     width: 40px;
-  }
-
-  /* carousel */
-  .carousel {
-    margin-top: 4px;
-  }
-  .slider {
-    height: 124px;
-  }
-  .slider::before,
-  .slider::after {
-    height: 124px;
   }
 }
