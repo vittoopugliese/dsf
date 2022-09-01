@@ -52,7 +52,7 @@ nav {
   width: 0px;
   height: 100vh;
   gap: 30px;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   background-color: white;
@@ -72,7 +72,7 @@ nav {
 }
 .navContainerBg {
   background-color: black;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 0px;
@@ -303,7 +303,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 0px 25px;
+  margin: 0px 5px;
   height: 100px;
   width: 250px;
 }
@@ -406,6 +406,9 @@ nav {
   }
 
   /* text */
+  .text {
+    padding: 15px;
+  }
   .textName {
     font-size: 30px;
   }
@@ -499,5 +502,46 @@ nav {
   }
   .logoLink img {
     width: 40px;
+  }
+}
+
+@media (max-width: 374px) {
+  /* pics */
+  .pic img {
+    width: 200px;
+    height: 104px;
+  }
+  /* text */
+  .text {
+    margin: 6px auto;
+  }
+  .textName {
+    font-size: 20px;
+  }
+  .subText {
+    font-size: 18px;
+  }
+  .textDesc {
+    font-size: 16px;
+  }
+
+  /* links */
+  .links {
+    margin-top: 8px;
+  }
+  .linksWrapper {
+    gap: 16px;
+  }
+  .linkContainer {
+    font-size: 14px;
+    width: 230px;
+    gap: 24px;
+    transform: scale(1);
+    white-space: nowrap;
+  }
+
+  /* logos */
+  .logoLink img {
+    width: 38px;
   }
 }
