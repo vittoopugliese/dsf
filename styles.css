@@ -123,11 +123,13 @@ nav {
 }
 
 .pic {
-  margin-top: 0px;
+  margin-top: -20px;
 }
 .pic img {
-  width: 340px;
-  height: 189px;
+  filter: invert(1);
+  mix-blend-mode: multiply;
+  width: 500px;
+  margin-bottom: -54px;
 }
 
 /* text */
@@ -136,7 +138,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   background-color: white;
   /* filter: drop-shadow(0 0px 20px rgba(0, 0, 0, 0.3)); */
   box-shadow: 0 0 28px rgba(0, 0, 0, 0.45);
@@ -166,7 +168,7 @@ nav {
 
 /* links */
 .links {
-  margin-top: 20px;
+  margin-top: 54px;
   user-select: none;
 }
 .linksWrapper {
@@ -214,7 +216,7 @@ nav {
 
 /* logos */
 .logos {
-  margin-top: 40px;
+  margin-top: 54px;
   user-select: none;
 }
 .logosWrapper {
@@ -255,7 +257,7 @@ nav {
 
 /* carousel */
 .carousel {
-  margin-top: 54px;
+  margin-top: 34px;
 }
 .slider {
   display: flex;
@@ -316,7 +318,6 @@ nav {
   }
   100% {
     transform: translateX(1800px);
-
   }
 }
 
@@ -339,8 +340,7 @@ nav {
 @media (max-width: 1154px) {
   /* pics */
   .pic img {
-    width: 280px;
-    height: 154px;
+    width: 420px;
   }
 
   /* text */
@@ -407,8 +407,7 @@ nav {
 @media (max-width: 624px) {
   /* pics */
   .pic img {
-    width: 260px;
-    height: 134px;
+    width: 360px;
   }
 
   /* text */
@@ -427,7 +426,7 @@ nav {
 
   /* links */
   .links {
-    margin-top: 10px;
+    margin-top: 24px;
   }
   .linksWrapper {
     gap: 24px;
@@ -450,7 +449,7 @@ nav {
   .logoLink img {
     width: 40px;
   }
-  
+
   /* carousel */
   .slider {
     height: 100px;
@@ -459,13 +458,16 @@ nav {
   .slider::after {
     height: 100px;
   }
+  .slide {
+    margin: 0px -8px;
+  }
 }
 
 @media (max-width: 454px) {
   /* pics */
   .pic img {
-    width: 220px;
-    height: 104px;
+    width: 300px;
+    margin-bottom: -44px;
   }
   /* text */
   .text {
@@ -523,8 +525,8 @@ nav {
 @media (max-width: 374px) {
   /* pics */
   .pic img {
-    width: 200px;
-    height: 104px;
+    width: 280px;
+    margin-bottom: -34px;
   }
   /* text */
   .text {
@@ -556,6 +558,10 @@ nav {
   }
 
   /* logos */
+  .logos {
+    margin-top: 12px;
+  }
+  
   .logoLink img {
     width: 38px;
   }
