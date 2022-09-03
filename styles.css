@@ -525,29 +525,28 @@ nav {
 @media (max-width: 374px) {
   /* pics */
   .pic img {
-    width: 280px;
-    margin-bottom: -34px;
+    margin-bottom: -28px;
   }
   /* text */
   .text {
     margin: 6px auto;
   }
   .textName {
-    font-size: 20px;
+    font-size: 25px;
   }
   .subText {
-    font-size: 18px;
+    font-size: 23px;
   }
   .textDesc {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   /* links */
   .links {
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .linksWrapper {
-    gap: 16px;
+    gap: 20px;
   }
   .linkContainer {
     font-size: 14px;
@@ -557,11 +556,7 @@ nav {
     white-space: nowrap;
   }
 
-  /* logos */
-  .logos {
-    margin-top: 12px;
-  }
-  
+  /* logos */  
   .logoLink img {
     width: 38px;
   }
