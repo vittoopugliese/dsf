@@ -189,14 +189,14 @@ nav {
   font-size: 18px;
   background-color: white;
   border: 2px solid grey;
-  box-shadow: 6px 6px 1px rgb(0, 0, 0);
+  box-shadow: 6px 6px 0px rgb(0, 0, 0);
   transform: scale(1.1);
   transition: 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .linkContainer:hover {
   transform: scale(1.15);
   background-color: rgb(240, 240, 240);
-  box-shadow: 10px 10px 2px rgb(0, 0, 0);
+  box-shadow: 12px 8px 0px rgb(0, 0, 0);
 }
 .linkContainer:active {
   transform: scale(1.2);
@@ -236,16 +236,17 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 4px;
+  border-radius: 8px;
   border: 2px solid grey;
-  box-shadow: 6px 6px 0px rgb(0, 0, 0);
+  box-shadow: 4px 4px 0px rgb(0, 0, 0);
   transition: 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .logoLink:hover {
   transform: scale(1.15);
   background-color: rgb(240, 240, 240);
-  box-shadow: 8px 8px 2px rgb(0, 0, 0);
+  box-shadow: 8px 6px 0px rgb(0, 0, 0);
+  border-radius: 12px;
 }
 .logoLink:active {
   transform: scale(1.2);
@@ -356,7 +357,7 @@ nav {
 
   /* links */
   .links {
-    margin-top: 10px;
+    margin-top: 24px;
   }
   .linksWrapper {
     gap: 24px;
@@ -376,12 +377,8 @@ nav {
   .logos {
     margin-top: 30px;
   }
-  .logoLink {
-    box-shadow: 6px 6px 0px rgb(0, 0, 0);
-  }
   .logoLink:hover {
     transform: scale(1.1);
-    box-shadow: 6px 6px 0px rgb(0, 0, 0);
   }
   .logoLink:active {
     transform: scale(1.15);
@@ -506,13 +503,11 @@ nav {
     gap: 38px;
   }
   .logoLink {
-    box-shadow: 4px 4px 0px rgb(0, 0, 0);
     transform: scale(0.95);
     padding: 6px;
   }
   .logoLink:hover {
     transform: scale(1);
-    box-shadow: 6px 6px 0px rgb(0, 0, 0);
   }
   .logoLink:active {
     transform: scale(1.05);
