@@ -108,7 +108,7 @@ nav {
 
 /* pics */
 .bg {
-  height: 150vh;
+  height: 500vh;
   width: 100vw;
   z-index: -5000;
   position: absolute;
@@ -336,6 +336,39 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #545454;
 }
+.instagram {
+  margin-top: 194px;
+}
+.embedsocial-hashtag {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap ;
+  background-color: rgb(54, 54, 54);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  width: 100vw;
+  height: 90px;
+}
+footer h1{
+  white-space: nowrap ;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+}
+footer a{
+  color: white;
+}
 
 /* mediaQueris ! */
 @media (max-width: 1154px) {
@@ -551,7 +584,7 @@ nav {
     white-space: nowrap;
   }
 
-  /* logos */  
+  /* logos */
   .logoLink img {
     width: 38px;
   }

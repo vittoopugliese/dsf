@@ -27,3 +27,6 @@ for (let i = 0; i < tok.length; i++) {
     audio.play();
   });
 }
+
+// ig
+const token = 792533275111320
